@@ -17,7 +17,7 @@ public class ShowController {
     @ResponseBody
     public String show() throws Exception {
 
-    	String str = StringUtils.lower("JavaScript");
+    	String str = StringUtils.lower("bbbb");
         return str;
     }
 
