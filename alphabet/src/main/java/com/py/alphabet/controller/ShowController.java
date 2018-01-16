@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.py.utility.StringUtils;
+
 /**
  * Created by panfenghui on 2017/10/26.
  */
@@ -15,8 +17,8 @@ public class ShowController {
     @ResponseBody
     public String show() throws Exception {
 
-     
-        return "aaaaa";
+    	String str = StringUtils.lower("JavaScript");
+        return str;
     }
 
 }
