@@ -18,6 +18,8 @@ public class ShowController {
     public String show() throws Exception {
 
     	String str = StringUtils.lower("bbbb");
+//    	str = OuterUtils.getContent();
+    	str = StringUtils.convert(str);
         return str;
     }
 
