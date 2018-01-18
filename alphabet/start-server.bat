@@ -1,1 +1,2 @@
-java -jar target/alphabet.jar
+call java -jar target/alphabet.jar
+pause

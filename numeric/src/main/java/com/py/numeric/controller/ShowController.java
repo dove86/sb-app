@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ShowController {
 
 
+    /**
+     * http://localhost:8082/numeric/show
+     * @return
+     * @throws Exception
+     */
     @RequestMapping("/show")
     @ResponseBody
     public String show() throws Exception {

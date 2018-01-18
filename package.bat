@@ -1,1 +1,2 @@
-mvn clean compile package -Dmaven.test.skip=true
+call mvn clean compile package -Dmaven.test.skip=true
+pause
