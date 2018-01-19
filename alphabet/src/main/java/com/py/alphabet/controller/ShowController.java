@@ -35,6 +35,7 @@ public class ShowController {
     	
     	InputStream inputStream = ResourceLoader.load("relatvie/mapping.properties");
     	System.out.println(inputStream);
+    	inputStream.close();
     	
     	str+="\n\r<br/>";
     	for (String msg : thisProjectMsgList) {
