@@ -1,5 +1,6 @@
 package com.py.alphabet.controller;
 
+import java.io.InputStream;
 import java.util.List;
 
 import org.springframework.stereotype.Controller;
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.py.utility.FileUtils;
+import com.py.utility.ResourceLoader;
 import com.py.utility.StringUtils;
 
 /**
@@ -30,6 +32,9 @@ public class ShowController {
     	str = StringUtils.convert(str);
     	List<String> thisProjectMsgList = FileUtils.readFromClassPath("message/alphabet.txt");//加载本项目的内容
     	List<String> utilProjectMsgList = FileUtils.readFromClassPath("message/utility.txt");//加载utility项目的内容
+    	
+    	InputStream inputStream = ResourceLoader.load("relatvie/mapping.properties");
+    	System.out.println(inputStream);
     	
     	str+="\n\r<br/>";
     	for (String msg : thisProjectMsgList) {
